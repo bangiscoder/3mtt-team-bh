@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styles/login.css">
+    <title>Login Signup</title>
+</head>
+<body>
+    <main>
+        <div class="banner">
+            <a href="../index.html">
+                <figure>
+                    <img src="assets/logo.png" alt="Waste Recycling & Management App logo">
+                </figure>
+            </a>
+    
+            <div class="intro">
+                <h1>Welcome to Recyclable Management System</h1>
+                <p>Our aim is to Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis iure assumenda a exercitationem qui quidem fugit dolore dolorum omnis voluptas illo doloremque, iste vitae numquam! Asperiores dolores consequatur maiores reprehenderit?</p>
+            </div>
+
+            <footer>
+                <p>&copy; 2024 Build-With-A-Fellow Challenge. All rights reserved.</p>
+            </footer>
+        </div>
+
+         <!-- Authentication Section -->
+         <div id="login" class="show">
+            <h2>User Login</h2>
+            <div class="forgotPass">
+                <input type="text" id="username" placeholder="Username">
+                <input type="password" id="password" placeholder="Password">
+                <p class="formText">Forgot Password? <a href="">Clike Here</a></p>
+                <button onclick="login()">Login</button>
+
+                <p class="formText">You Don't Have an Account?</p>
+                <button onclick="showSignUp('login', 'register')">Register</button>
+            </div>
+        </div>
+
+        <div id="register" class="hide">
+            <h2>User Registration</h2>
+            <div class="forgotPass">
+                <input type="text" name="fullName" id="fName" placeholder="Full Name">
+                <input type="text" id="uname" placeholder="Username">
+                <input type="password" id="pass" placeholder="Password">
+                <p class="formText">Forgot Password? <a href="">Clike Here</a></p>
+                <button onclick="register()">Register</button>
+            </div>
+
+            <div class="forgotPass"><p class="formText">You already have an Account?</p></div>
+            <button onclick="showSignUp('register', 'login')">Login</button>
+        </div>
+    </main>
+
+    <script src="../scripts/authentication.js"></script>
+</body>
+</html>
