@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Recycling & Management App</title>
+    <link rel="stylesheet" href="styles/general.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <figure>
+                <img src="assets/logo.png" alt="Waste Recycling & Management App logo">
+            </figure>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="login"><a href="pages/login.html">Login/Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to Waste Recyclable Management System</h1>
+            <p>Our goal is to Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis beatae esse cum ratione, illo pariatur numquam dolores maiores dicta deserunt itaque sed exercitationem. Aliquam ipsam corporis ea vitae quam nulla.</p>
+        </section>
+        
+        <!-- Waste Pickup Scheduling Section -->
+        <div id="pickup-section" class="section">
+            <h2>Waste Pickup Scheduling</h2>
+            <input type="text" id="pickup-address" placeholder="Pickup Address">
+            <input type="date" id="pickup-date">
+            <select id="waste-type">
+                <option value="recyclable">Recyclable</option>
+                <option value="organic">Organic</option>
+                <option value="hazardous">Hazardous</option>
+            </select>
+            <button onclick="schedulePickup()">Schedule Pickup</button>
+        </div>
+
+        <!-- Recycling Tracking & Rewards Section -->
+        <div id="tracking-section" class="section">
+            <h2>Recycling Tracking & Rewards</h2>
+            <p>Total Waste Recycled: <span id="waste-recycled">0</span> kg</p>
+            <button onclick="trackRecycling()">Add 1 kg Recycled</button>
+            <p>Earn rewards for contributing to a cleaner environment!</p>
+        </div>
+
+        <!-- Locate Recycling Centers Section -->
+        <div id="recycling-center-section" class="section">
+            <h2>Locate Recycling Centers</h2>
+            <button onclick="findCenters()">Find Nearby Centers</button>
+            <ul id="recycling-centers-list"></ul>
+        </div>
+
+        <!-- Educational Resources Section -->
+        <div id="education-section" class="section">
+            <h2>Educational Resources</h2>
+            <p>Learn more about proper waste segregation and recycling best practices.</p>
+            <ul>
+                <li>Always separate organic from recyclable waste.</li>
+                <li>Dispose of hazardous waste carefully to prevent contamination.</li>
+                <li>Recycle as much as possible to reduce landfill waste.</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Build-With-A-Fellow Challenge. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/recycle.js"></script>
+</body>
+</html>
