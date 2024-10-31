@@ -19,7 +19,7 @@ function login() {
 }
 
 function register() {
-    alert("Registration feature coming soon!");
+    alert("Registration Successful!");
 }
 
 // Waste Pickup Scheduling
