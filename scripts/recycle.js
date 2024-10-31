@@ -1,8 +1,8 @@
 // Sample data for recycling centers
 const recyclingCenters = [
-    { name: "Green Earth Recycling", location: "Lagos" },
+    { name: "LAWMA", location: "Lagos" },
     { name: "Eco Waste Solutions", location: "Abuja" },
-    { name: "Sustainable Recyclers", location: "Kano" }
+    { name: "Recycle Waste Plant", location: "Bauchi" }
 ];
 
 // User Authentication (Mock Implementation)
