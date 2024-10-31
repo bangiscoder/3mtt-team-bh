@@ -54,6 +54,7 @@ header nav ul li a:hover {
     text-align: center;
     background-color: #e9ecef;
     color: #333;
+    position: relative;
 }
 
 .hero h1 {
